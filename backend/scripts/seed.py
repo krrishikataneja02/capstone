@@ -411,7 +411,7 @@ def seed(db: Session) -> None:
     print(f"  Attendance records: {len(attendance_objs)}")
 
     db.commit()
-    print("\n✅ Seed complete!")
+    print("\n[OK] Seed complete!")
 
 
 def reset_db(db: Session) -> None:
@@ -426,7 +426,7 @@ def reset_db(db: Session) -> None:
     for model in tables:
         db.query(model).delete()
     db.commit()
-    print("🗑️  All data deleted.")
+    print("[OK] All data deleted.")
 
 
 def main() -> None:
