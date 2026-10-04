@@ -1,0 +1,35 @@
+# Virtual Environments
+.venv/
+backend/.venv/
+venv/
+env/
+ENV/
+
+# Python Bytecode & Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+**/.pytest_cache/
+*.pytest_cache.zip
+backend/.pytest_cache.zip
+
+# Secrets and Local Configuration
+.env
+backend/.env
+!.env.example
+!backend/.env.example
+
+# Local Databases
+*.sqlite3
+*.db
+backend/digital_twin_sqlite_verify.db
+
+# Temporary Archives
+*.zip
+
+# Operating System & IDE Files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
